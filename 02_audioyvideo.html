@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--ARRASTRANDO EL ARCHIVO DESDE SOLUTION EXPLORER
+    <audio controls="controls">
+        <source src="audio/holy.mp3" type="audio/mpeg" />
+    </audio>-->
+    <!--APUNTES PACO-->
+    <audio src="audio/holy.mp3" controls>
+        <a href="audio/holy.mp3">Holy - Justin Bieber</a>
+    </audio>
+
+    <!--*************-->
+    <!--ARRASTRANDO EL ARCHIVO DESDE SOLUTION EXPLORER
+    <video controls="controls">
+        <source src="video/holy.mp4" type="video/mp4" />
+    </video>-->
+    <!--APUNTES PACO-->
+    <video width="640" height="360" poster="img/holy.jpg" controls autoplay muted>  <!--sin muted, no autoplay-->
+        <!--El atributo “poster”, muestra una imagen al empezar, hasta que no se le da al “play”-->
+        <source src="PeliHTML5.mp4" type="video/mp4" /> Safari , IE9
+        <source src="video/holy.mp4" type="video/mp4" /> Chrome10+, Ffx4+, Opera10.6+
+        <source src="PeliHTML5.ogv" type="video/ogg" /> Firefox3.6+ / Opera 10.5+
+        <object width="640" height="360" type="application/x-shockwave-flash" data="player.swf">
+            <param name="movie" value="video/holy.mp4" />
+            <param name="flashvars" value="autostart=true&controlbar=over&image=poster.jpg&file=archivo.mp4" />
+        </object>
+    </video>
+    <video width="640" height="360" poster="img/holy.jpg" controls autoplay>
+        <!--El atributo “poster”, muestra una imagen al empezar, hasta que no se le da al “play”-->
+        <source src="PeliHTML5.mp4" type="video/mp4" /> Safari , IE9
+        <source src="video/holy.mp4" type="video/mp4" /> Chrome10+, Ffx4+, Opera10.6+
+        <source src="PeliHTML5.ogv" type="video/ogg" /> Firefox3.6+ / Opera 10.5+
+        <object width="640" height="360" type="application/x-shockwave-flash" data="player.swf">
+            <param name="movie" value="video/holy.mp4" />
+            <param name="flashvars" value="autostart=true&controlbar=over&image=poster.jpg&file=archivo.mp4" />
+        </object>
+    </video>
+</body>
+</html>

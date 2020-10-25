@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="form">
+        <select name="select">
+            <option value="dflt">Elige</option>
+            <option value="1.">Número 1</option>
+            <option value="2.">Número 2</option>
+            <option value="3.">Número 3</option>
+        </select>
+    </form>
+    <h1 id="resul"></h1>
+    <script type="text/javascript">
+        window.onload = function () {
+            console.log("INICIO");
+            var select = document.forms[0].select;
+            select.onchange = function () {
+                for (var opcion of select) {
+                    //console.log(opcion);
+                    if (opcion.selected) {
+                        console.log(opcion);
+                        var h1 = document.getElementById("resul");
+                        if (opcion.value != "dflt") {
+                            h1.innerText = opcion.text;
+                        } else {
+                            h1.innerText = "";
+                        }
+                    }
+                }
+            }
+        }
+        //for (var i = 0; i < document.forms[0].select.options.length; i++) {
+        //for (var i = 0; i < document.forms[0].select.length; i++) {
+        //    console.log(document.forms[0].select.options[i].value);
+        //    console.log(document.forms[0].select.options[i].text);
+        //    console.log("HOLA " + (i+1));
+        //}
+    </script>
+</body>
+</html>

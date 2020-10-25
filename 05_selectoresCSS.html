@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        p a span {
+            color: red;
+        }
+        p[name*='hola']{
+            color: darkred;
+        }
+        p[name~='hola']{
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <p name="ahola">ahola</p>
+    <p name="ahola hola">ahola hola</p>
+    <p name="a hola">a hola</p>
+    <p name="a holar">a holar</p>
+    <p>
+        Bla bla bla
+        <span>texto1</span>
+        <a href="">Link<span>texto2</span></a>
+        Ble ble ble
+        <span>LALALA</span>
+    </p>
+    <span>sdfdflfjdf</span>
+</body>
+</html>
